@@ -1,4 +1,4 @@
-node('any')   {
+node()   {
       def dockerImageName= '16m21a03l1/javadedockerapp_$JOB_NAME:$BUILD_NUMBER'
       stage('SCM Checkout'){
          git 'https://github.com/arifl1/java-groovy-docker.git'          
